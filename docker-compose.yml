@@ -1,0 +1,9 @@
+---
+services:
+  prisma_studio:
+    build: .
+    ports:
+      - "5555:5555"
+    environment:
+      DATABASE_PROVIDER: "postgresql"
+      DATABASE_URL: "postgresql://user:password@host:port/dbname"
